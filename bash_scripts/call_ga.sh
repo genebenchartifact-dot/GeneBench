@@ -2,7 +2,7 @@
 
 MainDir=$(pwd)
 DatasetList=("cruxeval" "HumanEval" "ClassEval" "Avatar") #"cruxeval" "ClassEval" "Avatar" "HumanEval"
-MAX_SESSIONS=250   # limit of concurrent tmux sessions
+MAX_SESSIONS=$1   # limit of concurrent tmux sessions
 GADIR="GA_v1"
 echo STARTING at $(date)
 git rev-parse HEAD
