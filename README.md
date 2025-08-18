@@ -2,7 +2,7 @@
 
 ## Repository Structure
 
-⭐️ Transformations of original benchmarks that constructed the final problems in GeneBench ([final_transformation](final_transformation)).  
+⭐️ Transformations of original benchmarks that constructed the final problems in GeneBench ([transformations](transformations)).  
 
 ⭐️ Detailed logs of the transformation process for each individual program, including statistics for each transformation across all iterations, such as time cost, applied operators, and readability/complexity metrics; GeneBench benchmark, Pareto-front solutions, and non-optimal solutions:
 
