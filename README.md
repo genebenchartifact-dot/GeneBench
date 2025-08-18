@@ -4,13 +4,13 @@
 
 ⭐️ Transformations of original benchmarks that constructed the final problems in GeneBench ([transformations](transformations)).  
 
-⭐️ Detailed logs of the transformation process for each individual program, including statistics for each transformation across all iterations, such as time cost, applied operators, and readability/complexity metrics; GeneBench benchmark, Pareto-front solutions, and non-optimal solutions:
+⭐️ Detailed logs of the transformation process for each individual program, including statistics for each transformation across all iterations, such as time cost, applied operators, and readability/complexity metrics; GeneBench benchmark, Pareto-front solutions, and non-optimal solutions: [all_logs/GA_logs.zip](https://drive.google.com/drive/folders/1npU--eZxlXLBlb_UOrqoakrb9Io_BL1I?usp=share_link)
 
 ⭐️ Scripts to reproduce and visualize evaluation results in the paper ([reproduction](reproduction)).  
 
 ⭐️ Source code of GeneBench ([tool](tool/)). You can see the implementation of all operators under [tool/operators](tool/operators).   
 
-⭐️ Details of 22 semantically equivalent transformation operators, along with code examples illustrating how they transform the code ([operators](operators.pdf)). If you have trouble loading the entire file (three pages), please view it [here](https://drive.google.com/file/d/1clxGcZ4fivTVM7-9hFkTMkly5ZsXqGt1/view?usp=sharing)).   
+⭐️ Details of 22 semantically equivalent transformation operators, along with code examples illustrating how they transform the code: [link](https://drive.google.com/file/d/1clxGcZ4fivTVM7-9hFkTMkly5ZsXqGt1/view?usp=sharing))(three pages).   
 
 
 ## 
