@@ -10,7 +10,7 @@
 
 ⭐️ Source code of GeneBench ([tool](tool/)). You can see the implementation of all operators under [tool/operators](tool/operators).   
 
-⭐️ Details of 22 semantically equivalent transformation operators, along with code examples illustrating how they transform the code: [link](https://drive.google.com/file/d/1clxGcZ4fivTVM7-9hFkTMkly5ZsXqGt1/view?usp=sharing)(three pages).   
+⭐️ Details of 22 semantically equivalent transformation operators, along with code examples illustrating how they transform the code: [link](https://drive.google.com/file/d/1clxGcZ4fivTVM7-9hFkTMkly5ZsXqGt1/view?usp=sharing) (three pages).   
 
 
 ## 
