@@ -51,9 +51,10 @@ e.g.,
 python3 -u tool/init.py --src_file dataset/HumanEval/code/HumanEval_0.py --target_file reproduction_examples/HumanEval0_transformation.py --file_id HumanEval_0 --evaluation_tests_dir dataset/HumanEval |& tee reproduction_examples/HumanEval_0.log
 ```
 
-- You can run the following commands to apply genetic algorithm on all benchmarks:
+- You can run the following commands to apply the genetic algorithm across all benchmarks. The maximum number of parallel processes can be configured via ${max_session}, which will then be executed automatically in parallel tmuxes.
+
 ```
-bash -x bash_scripts/bash_scripts/call_ga.sh
+bash -x bash_scripts/bash_scripts/call_ga.sh ${max_session}
 ```
 
 To check the results, each instance will have a seperate directory, with the following outputs:
