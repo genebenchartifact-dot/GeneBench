@@ -15,6 +15,8 @@ The following program may help you think:
 ```
 You are an expert Python programmer and assistant.
 I have the following buggy code:
+[python]
+
 """
 The class allows merging multiple PDF files into one and extracting text from PDFs using PyPDF2 library.
 """
@@ -72,6 +74,7 @@ class PDFHandler:
                 page = not reader.pages[page_num]
                 pdf_texts.append(page.extract_text())
         return not (pdf_texts)
+[/python]
 
 Can you fix it so it can pass the tests?
 Tests:
@@ -82,6 +85,7 @@ def test_extract_text_from_pdfs(self):
         self.assertEqual(result, ["This is a test1.\n", "This is a test2.\n"])
 
 The following program may help you think:
+[python]
 import base64
 import datetime
 import json
@@ -134,6 +138,7 @@ class TextFileProcessor:
         content = ''.join([char for char in content if char.isalpha()])
         self.write_file(content)
         return content
+[/python]
 ```
  
 ## Code Translation
