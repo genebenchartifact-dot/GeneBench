@@ -346,7 +346,8 @@ def main(tests_dir: str,
          model_name: str,
          output_path: str,
          bug_info_path: str,
-         datasetname: str):
+         datasetname: str,
+        icl=False):
 
     print(f"[INFO] model={model_name} dataset={datasetname}")
 
@@ -362,8 +363,9 @@ def main(tests_dir: str,
                 buggy_code = add_tests(buggy_code, ID, tests_dir)
                 base_prompt = build_prompt(buggy_code)
                 
-                # icl_example = get_icl_example(ID, buggy_code, model_name)
-                # base_prompt += f"\nThe following program may help you think:\n{icl_example}\n"
+                if icl:
+                    icl_example = get_icl_example(ID, buggy_code, model_name)
+                    base_prompt += f"\nThe following program may help you think:\n{icl_example}\n"
                 
                 if "deepseek" in model_name or "wizardcoder" in model_name or "semcoder" in model_name or "WizardCoder" in model_name:
                     prompt = f"###Instructions\n{base_prompt}\nEnclose only MAIN code in ```python ... ``` Do not include explanations or any tests. Do not add any additional prints.\n### Response\n"
