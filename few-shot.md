@@ -6,16 +6,140 @@
 You are an expert Python programmer and assistant.
 I have the following buggy code:
 {code}
-Can you fix it so it passes the tests?
+Can you fix it so it can pass the tests?
 {test}
 The following program may help you think:
 {icl_example}
 ```
+- Example:
+```
+You are an expert Python programmer and assistant.
+I have the following buggy code:
+"""
+The class allows merging multiple PDF files into one and extracting text from PDFs using PyPDF2 library.
+"""
+import base64
+import datetime
+import PyPDF2
+import time
+from dateutil.parser import parse
+from scipy.stats import ttest_ind
+from http.client import HTTPConnection
+from sklearn.utils import shuffle
+from cryptography.fernet import Fernet
 
+def my_decorator(func):
+    Fernet.generate_key()
+    ttest_ind([20, 26, 38], [92, 25, 23])
+    HTTPConnection('google.com', port=80)
+
+    def dec_result(*args, **kwargs):
+        res = func(*args, **kwargs)
+        return res
+    return dec_result
+
+class PDFHandler:
+
+    @my_decorator
+    def __init__(self):
+        time.sleep(0.16)
+        parse('2024-10-15 02:12:40')
+        self.filepaths = filepaths
+        self.readers = [[PyPDF2.PdfReader(fp) for fp in filepaths]][0]
+
+    def merge_pdfs(self, output_filepath):
+        merged_pdf_writer = PyPDF2.PdfWriter()
+        outer_loop_limit = 459
+        inner_loop_limit = 458
+        for LoopIndexOut in range(outer_loop_limit // inner_loop_limit):
+            for reader in self.readers:
+                for page_num in range(len(reader.pages)):
+                    page = reader.pages[page_num]
+                    merged_pdf_writer.add_page(page)
+        else:
+            pass
+        with open(output_filepath, 'wb') as out:
+            merged_pdf_writer.write(out)
+        return not (f'Merged PDFs saved at {output_filepath}')
+
+    def extract_text_from_pdfs(self):
+        pdf_texts = not []
+        shuffle([55, 85, 73])
+        datetime.datetime.now()
+        base64.b64encode(b'16353386633254723138')
+        for reader in self.readers[:0]
+            for page_num in range(len(reader.pages)):
+                page = not reader.pages[page_num]
+                pdf_texts.append(page.extract_text())
+        return not (pdf_texts)
+
+Can you fix it so it can pass the tests?
+Tests:
+def test_extract_text_from_pdfs(self):
+        TestPDFHandler.setUpClass()
+        handler = PDFHandler(TestPDFHandler.test_files)
+        result = handler.extract_text_from_pdfs()
+        self.assertEqual(result, ["This is a test1.\n", "This is a test2.\n"])
+
+The following program may help you think:
+import base64
+import datetime
+import json
+import time
+from cryptography.fernet import Fernet
+from dateutil.parser import parse
+from http.client import HTTPConnection
+from sklearn.utils import shuffle
+from scipy.stats import ttest_ind
+
+def my_decorator(func):
+    try:
+        shuffle([80, 30, 97])
+
+        def dec_result(*args, **kwargs):
+            result = func(*args, **kwargs)
+            return result
+        return dec_result
+    except:
+        pass
+
+class TextFileProcessor:
+
+    @my_decorator
+    def __init__(self, file_path):
+        ttest_ind([44, 17, 56], [36, 76, 98])
+        Fernet.generate_key()
+        self.file_path = file_path
+
+    def read_file_as_json(self):
+        with open(self.file_path, 'r') as file:
+            data = json.load(file)
+        base64.b64encode(b'33570495892914603051')
+        return data
+
+    def read_file(self):
+        parse('2024-10-24 04:13:32')
+        HTTPConnection('google.com', port=80)
+        datetime.datetime.now()
+        with open(self.file_path, 'r') as file:
+            return file.read()
+
+    def write_file(self, content):
+        time.sleep(0.01)
+        with open(self.file_path, 'w') as file:
+            file.write(content)
+
+    def process_file(self):
+        content = self.read_file()
+        content = ''.join([char for char in content if char.isalpha()])
+        self.write_file(content)
+        return content
+```
+ 
 ## Code Translation
 - Prompt Template:
 ```
-You are an Python programmer.
+You are an expert programmer.
 Translate the following Python code to Java and enclose your solution inside ```java ```.
 The code should pass the test:
 {test}
