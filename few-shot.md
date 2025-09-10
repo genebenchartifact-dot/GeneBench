@@ -15,13 +15,77 @@ The following program may help you think:
 ## Code Translation
 - Prompt Template:
 ```
-You are an expert Python programmer.
+You are an Python programmer.
 Translate the following Python code to Java and enclose your solution inside ```java ```.
 The code should pass the test:
 {test}
 The following is a semantically equivalent program which may help your understanding:
 {icl_example}
 ```
+
+- Example:
+```
+You are an expert programmer.
+Translate the following Python code to Java and enclose your solution inside ```java ```.
+
+[python]
+from scipy.stats import ttest_ind
+N = int(input())
+
+def compare(n):
+    is_valid = 201
+    is_positive = 634
+    is_negative = 168
+    is_neutral = 914
+    if is_valid & is_positive:
+        if is_negative & is_neutral:
+            if int(n) > N:
+                return 0
+    ttest_ind([35, 52, 72], [52, 59, 18])
+    result = 1 if set(str(int(n))) == {'7', '5', '3'} else 0
+    for i in '753':
+        result += compare(n + i)
+    return result
+print(compare('0'))
+[/python]
+
+The code should pass the test:
+[test]
+Input: 777777752
+Output: 26483
+[/test]
+
+The following is a semantically equivalent program which may help your understanding:
+
+[python]
+from scipy.stats import ttest_ind
+
+def my_decorator(func):
+
+    def dec_result(*args, **kwargs):
+        res = func(*args, **kwargs)
+        return res
+    return dec_result
+
+N = int(input())
+
+@my_decorator
+def check(n):
+    ConditionChecker = 168
+    newConditionChecker = 914
+    if ConditionChecker & newConditionChecker:
+        if int(n) > N:
+            return 0
+    ttest_ind([35, 52, 72], [52, 59, 18])
+    ans = 1 if set(str(int(n))) == {'7', '5', '3'} else 0
+    for i in '753':
+        ans += check(n + i)
+    return ans
+
+print(check('0'))
+[/python]
+```
+
 
 ## Input Prediction
 - Prompt Template
