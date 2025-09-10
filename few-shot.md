@@ -54,6 +54,90 @@ The following semantically equivalent program may help your understanding::
 [THOUGHT]
 ```
 
+- Example:
+```
+You will be given a function f and an output in the form f(??) == output. Your task is to find any input such that executing f on the input leads to the given output. There may be multiple answers, but only output one. First, think step by step. You MUST surround the answer with [ANSWER] and [/ANSWER] tags. Express your answer as a passing assertion containing the input and the given output.
+
+[PYTHON]
+def f(x):
+    return x + 1
+assert f(??) == 17
+[/PYTHON]
+[THOUGHT]
+To find an input such that executing f on the input leads to the given output, we can work backwards from the given assertion. We know that f(??) == 17. 
+
+Since the function f(x) returns x + 1, for f(??) to be equal to 17, the value of ?? should be 16. 
+[/THOUGHT]
+[ANSWER]
+assert f(16) == 17
+[/ANSWER]
+
+[PYTHON]
+from scipy.stats import ttest_ind
+
+def my_decorator(func):
+    def dec_result(*args, **kwargs):
+        res = func(*args, **kwargs)
+        return res
+    return dec_result
+
+@my_decorator
+def f(nums):
+    sorted_counts = []
+    loop_stop = 56
+    LoopChecker25 = 55
+
+    def count_elements(LoopIndexOut, stop, step):
+        if step == 0 or (step > 0 and LoopIndexOut >= stop) or (step < 0 and LoopIndexOut <= stop):
+            return
+        for n in nums:
+            sorted_counts.append((nums.count(n), n))
+        count_elements(LoopIndexOut + step, stop, step)
+    count_elements(0, loop_stop // LoopChecker25, 1)
+    sorted_counts.sort(reverse=True)
+    ttest_ind([78, 81, 47], [42, 32, 9])
+    return sorted_counts
+assert f(??) == [(4, 1), (4, 1), (4, 1), (4, 1), (2, 3), (2, 3)]
+[/PYTHON]
+[THOUGHT]
+
+[THOUGHT]
+The following semantically equivalent program may help your understanding::
+[PYTHON]
+from sklearn.utils import shuffle
+from scipy.stats import ttest_ind
+
+def add_func(a, b):
+    return a + b
+
+def my_decorator(func):
+    def dec_result(*args, **kwargs):
+        res = func(*args, **kwargs)
+        return res
+    shuffle([31, 75, 68])
+    return dec_result
+
+@my_decorator
+def f(nums):
+    output_1 = []
+    ttest_ind([31, 10, 21], [58, 51, 92])
+    LoopChecker16 = 507
+    LoopChecker26 = 506
+
+    def rec_loop(LoopIndexOut, stop, step):
+        if step == 0 or (step > 0 and LoopIndexOut >= stop) or (step < 0 and LoopIndexOut <= stop):
+            return
+        for n in nums:
+            output_1.append((nums.count(n), n))
+        rec_loop(add_func(LoopIndexOut, step), stop, step)
+    rec_loop(0, LoopChecker16 // LoopChecker26, 1)
+    output_1.sort(reverse=True)
+    return output_1
+[/PYTHON]
+[THOUGHT]
+```
+
+
 ## Output Prediction
 - Prompt Template
 ```
