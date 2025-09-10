@@ -14,6 +14,8 @@
 
 ⭐️ Details of 22 semantically equivalent transformation operators, along with code examples illustrating how they transform the code: [link](https://drive.google.com/file/d/1clxGcZ4fivTVM7-9hFkTMkly5ZsXqGt1/view?usp=sharing) (three pages).   
 
+⭐️ Few-shot [examples](few-shot.md).
+
 
 ## 
 
